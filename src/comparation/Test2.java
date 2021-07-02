@@ -24,7 +24,8 @@ public class Test2 {
 }
 
 class Employee implements Comparable<Employee> {
-    int id;
+//    int id;
+    Integer id;
     String name;
     String surname;
     int salary;
@@ -58,6 +59,12 @@ class Employee implements Comparable<Employee> {
 //        else {
 //            return 1;
 //        }
-        return this.id-anotherEmp.id;
+
+
+//        return this.id-anotherEmp.id;//
+
+//        return this.id.compareTo(anotherEmp.id);
+
+        return this.name.compareTo(anotherEmp.name);
     }
 }
