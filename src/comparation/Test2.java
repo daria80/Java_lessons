@@ -8,24 +8,26 @@ import java.util.List;
 public class Test2 {
 
     public static void main(String[] args) {
-      List<Employee> list = new ArrayList<>();
-      Employee emp1 = new Employee(100, "Daria", "Smirnova", 1234);
-      Employee emp2 = new Employee(15, "Ivan", "Petrov", 6542);
-      Employee emp3 = new Employee(123, "Ivan", "Sidorov", 8542);
 
-      list.add(emp1);
-      list.add(emp2);
-      list.add(emp3);
-      System.out.println("Before sorting \n" + list);
-      Collections.sort(list);
-      System.out.println("After sorting \n" + list);
+        List<Employee> list = new ArrayList<>();
+        Employee emp1 = new Employee(100, "Daria", "Smirnova", 1234);
+        Employee emp2 = new Employee(15, "Ivan", "Petrov", 6542);
+        Employee emp3 = new Employee(123, "Ivan", "Sidorov", 8542);
+
+        list.add(emp1);
+        list.add(emp2);
+        list.add(emp3);
+        System.out.println("Before sorting \n" + list);
+        Collections.sort(list);
+        System.out.println("After sorting \n" + list);
 
     }
 }
 
 class Employee implements Comparable<Employee> {
-//    int id;
-    Integer id;
+
+    int id;
+    //    Integer id;
     String name;
     String surname;
     int salary;
@@ -50,15 +52,14 @@ class Employee implements Comparable<Employee> {
 
     @Override
     public int compareTo(Employee anotherEmp) {
-//        if(this.id == anotherEmp.id) {
-//            return 0;
-//        }
-//        else if (this.id< anotherEmp.id) {
-//            return -1;
-//        }
-//        else {
-//            return 1;
-//        }
+
+        if (this.id == anotherEmp.id) {
+            return 0;
+        } else if (this.id < anotherEmp.id) {
+            return -1;
+        } else {
+            return 1;
+        }
 
 
 //        return this.id-anotherEmp.id;//
@@ -67,10 +68,11 @@ class Employee implements Comparable<Employee> {
 
 //        return this.name.compareTo(anotherEmp.name);
 
-        int result = this.name.compareTo(anotherEmp.name);
-        if (result==0) {
-            result = this.surname.compareTo(anotherEmp.surname);
-        }
-        return result;
+//        int result = this.name.compareTo(anotherEmp.name);
+//        if (result==0) {
+//            result = this.surname.compareTo(anotherEmp.surname);
+//        }
+//        return result;
+
     }
 }
