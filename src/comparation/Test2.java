@@ -65,6 +65,12 @@ class Employee implements Comparable<Employee> {
 
 //        return this.id.compareTo(anotherEmp.id);
 
-        return this.name.compareTo(anotherEmp.name);
+//        return this.name.compareTo(anotherEmp.name);
+
+        int result = this.name.compareTo(anotherEmp.name);
+        if (result==0) {
+            result = this.surname.compareTo(anotherEmp.surname);
+        }
+        return result;
     }
 }
