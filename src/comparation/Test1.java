@@ -10,9 +10,9 @@ public class Test1 {
         list.add("Smirnova");
         list.add("Darya");
         list.add("Mikhailovna");
-        System.out.println("Before sortage");
+        System.out.println("Before sorting");
         System.out.println(list);
-        System.out.println("After sortage");
+        System.out.println("After sorting");
         Collections.sort(list);
         System.out.println(list);
     }
