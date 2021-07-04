@@ -18,9 +18,11 @@ public class Test1 {
         list.add("MY");
         list.add("YOUR");
 
-        for(Object o : list) {
-            System.out.println(o + "length" + ((String)o).length());
+        for (Object o : list) {
+            System.out.println(o + "length" + ((String) o).length());
         }
     }
 }
-class Car{}
+
+class Car {
+}

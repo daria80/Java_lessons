@@ -7,7 +7,7 @@ public class ParametrizedClass2 {
         System.out.println("value1 = " + pair.getFirstValue() + " " +
                 "value2 = " + pair.getSecondValue());
 
-        Pair<Integer,Double> pair2 = new Pair<>(156, 3.14);
+        Pair<Integer, Double> pair2 = new Pair<>(156, 3.14);
         System.out.println("value1 = " + pair2.getFirstValue() + " " +
                 "value2 = " + pair2.getSecondValue());
 

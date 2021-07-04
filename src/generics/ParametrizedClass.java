@@ -13,8 +13,10 @@ public class ParametrizedClass {
         System.out.println(s1);
     }
 }
+
 class Info<T> {
     private T value;
+
     public Info(T value) {
         this.value = value;
     }
