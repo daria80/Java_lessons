@@ -7,7 +7,7 @@ public class Test1 {
 
     public static void main(String[] args) {
 
-        List list = new ArrayList<>();
+        List<String> list = new ArrayList<String>();
 //        list.add("Ok");
 //        list.add(5);
 //        list.add(new StringBuilder("efnakhiu"));
